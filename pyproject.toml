@@ -1,0 +1,12 @@
+[project]
+name = "moe-compress"
+version = "0.1.0"
+description = "Toy-scale study of Mixture-of-Experts compression on Apple silicon, built with MLX"
+requires-python = ">=3.10"
+dependencies = ["mlx>=0.22", "numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
